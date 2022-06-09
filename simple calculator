@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n1,n2;
+    char s;
+    cout<<"enter the two numbers"<<"\n";
+    cin>>n1>>n2;
+    cout<<"1. Addition"<<"\n";
+    cout<<"2. subtraction"<<"\n";
+    cout<<"3. multipication"<<"\n";
+    cout<<"4. Division"<<"\n";
+    cout<<"5. remainder"<<"\n";
+    cout<<"choose the operator:"<<"\n";
+    cin>>s;
+    switch(s) 
+    {
+    case '+':
+      cout << n1 << " + " << n2 << " = " << n1 + n2;
+      break;
+
+    case '-':
+      cout << n1 << " - " << n2 << " = " << n1 - n2;
+      break;
+
+    case '*':
+      cout << n1 << " * " << n2 << " = " << n1 * n2;
+      break;
+
+    case '/':
+      cout << n1 << " / " << n2 << " = " << n1 / n2;
+      break;
+
+    default:
+      cout << "Error! operator is not correct";
+      break;
+  }
+  return 0;
+}
