@@ -1,0 +1,30 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+    int n;
+    int arm=0;
+    int r=0;
+    int n1=0;
+    cout<<"enter the number to check whether it is a armstrong or not:";
+    cin>>n;
+    int m=n;
+    while(m!=0)
+    {
+        n1=n%10;
+        r=m%10;
+        arm+=pow(r,n1);
+        m=m/10;
+     }
+     if(arm==n)
+     {
+         cout<<"number is armstrong:";
+     }
+     else
+     {
+         cout<<"number is not armstrong:";
+     }
+     return 0;
+}
