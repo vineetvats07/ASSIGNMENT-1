@@ -1,0 +1,24 @@
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    int n1=0;
+    int n2=1;
+    cout<<"enter the limit upto which u want to calculate the fioonacci numbers:";
+    cin>>n;
+    cout<<"fionacci series are:";
+    cout<<n1<<n2;
+    int i=2;
+    while(i<n)
+    {
+        int n3=n1+n2;
+        cout<<n3;
+        n1=n2;
+        n2=n3;
+        i++;
+    }
+    return 0;
+    
+}
